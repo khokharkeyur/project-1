@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.logo img{
+    width: 100px;
+    height: 100px ;
+    border-radius: 100px;
+}
+.navber{
+    display: flex;
+    text-align: center;
+    position: sticky;
+    align-items: center;
+    top: 0;
+
+}
+.navber::before{
+    content: "";
+    background-color: rgb(126, 65, 24);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.logo{
+margin: 10px;
+}
+ul{
+    display: flex;
+}
+ul li{
+  
+    list-style: none;
+    font-size: 1.3rem;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 3px 20px;
+    border-radius:20px ;
+    display: block;
+}
+ul li a:hover{
+    color: black;
+    background-color: white;
+  
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg,
+    rgba(66, 64, 64, 0.75),
+    rgba(42, 43, 44, 0.75)), url("hamburger-2943825_960_720.jpg");
+    background-repeat: no-repeat;   
+    background-size:cover;
+    height: 630px;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#services-container h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.services{
+    margin: 34px;
+    display: flex;
+}
+
+.box1{
+    border: 2px solid brown;
+    padding: 30px;
+    margin:3px 6px  ;
+    border-radius: 28px;
+    background: #f2f2f2;
+    width: 400px;
+}
+
+.box1 img{
+    height: 150px;
+    padding: 0 50px;
+
+}
+.box1 h2{
+    text-align: center;
+}
+#client-section h1{
+    text-align: center;
+    color: white;
+}
+
+ #client-section{
+height: 100%;
+width: 100%;
+z-index: -1;
+position:relative;
+background-image:linear-gradient(45deg,
+rgba(66, 64, 64, 0.75),
+rgba(42, 43, 44, 0.75)),url("spaghetti-1932466_960_720.jpg");
+
+
+}
+ 
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients img{
+    height: 130px;
+}
+.client-item{
+    padding: 34px;
+   
+}
+#contact{
+    position: relative;
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    background-image: linear-gradient(45deg,
+    rgba(66, 64, 64, 0.75),
+    rgba(42, 43, 44, 0.75)), url("concentrated-handsome-businessman-talking-on-600w-493678231.webp");
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+.contact h1{
+    text-align: center;
+    font-size: 3.8rem;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+.contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+.contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+.contact-box form{
+    width: 40%;
+}
+.contact-box label{
+  font-size: 1.3rem;
+}
+.form-submit{
+    margin: 20px 0 0;
+   background-color: aqua;
+    color: #f2f2f2;
+    width: 20%;
+}
+
+
+
+.h-primary{
+    font-size:3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background: brown;
+    border-radius: 10px;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1200px){
+ .navber{
+    flex-direction: column;
+ }
+ .navber ul li a{
+    font-size: 1rem;
+    padding: 0 7px;
+ }
+    #home{
+height: 370px;
+padding: 3px 68px;
+
+ }
+ #home::before{
+    height: 480px;
+    
+     }
+     #home p{
+        font-size: 13px;
+     }
+     .h-primary{
+        font-size: 26px;
+    }
+ .services{
+flex-direction: column;
+justify-content: center;
+align-items: center;
+ }
+
+ .clients{
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    height: 100%;
+
+ }
+ .clients img{
+ 
+ width: 30%;
+ padding: 56px;
+
+ }
+ .btn{
+    font-size: 13px;
+    padding: 4px 8px;
+ }
+ .contact-box form{
+    width: 80%;
+ }
+}
+@media screen and (max-width:500px){
+.box1{
+    padding: 0;
+    margin: 0 0 20px 0;
+    width: 70%;
+    height: auto;
+}
+.box1 img{
+width: 70%;
+}
+
+}
